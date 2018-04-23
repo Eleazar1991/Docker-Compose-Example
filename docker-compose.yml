@@ -1,0 +1,14 @@
+version: "2"
+services:
+ app:
+  build: app/.
+  ports:
+   - "8080:80"
+ mongo:
+  image: mongo
+  ports:
+   - "27017:27017"
+ api: 
+  build: api/.
+  ports:
+   - "8085:8081"
